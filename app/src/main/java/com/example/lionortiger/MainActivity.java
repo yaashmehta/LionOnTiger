@@ -61,12 +61,10 @@ public class MainActivity extends AppCompatActivity {
     public void imageViewIsTapped(View imageView) {
 
 
-        Log.i("Mytag","Click");
 
         ImageView tappedImageView = (ImageView) imageView;
         int tiTag = Integer.parseInt(tappedImageView.getTag().toString());
 
-        Log.i("Mytag", playerChoices[tiTag]+"Click"+gameover+"");
         if(playerChoices[tiTag] == Player.No && gameover != true) {
             Log.i("Mytag","Click1");
             playerChoices[tiTag] = currentPlayer;
