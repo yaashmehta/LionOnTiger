@@ -62,11 +62,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
         ImageView tappedImageView = (ImageView) imageView;
         int tiTag = Integer.parseInt(tappedImageView.getTag().toString());
 
         if(playerChoices[tiTag] == Player.No && gameover != true) {
-            Log.i("Mytag","Click1");
+
             playerChoices[tiTag] = currentPlayer;
             tappedImageView.setTranslationX(-2000);
             if (currentPlayer == Player.ONE) {
